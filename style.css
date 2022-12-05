@@ -1,0 +1,39 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Generics */
+  body {
+    font-family: sans-serif;
+    padding-top: 60px;
+  }
+
+
+  /* Utils */
+
+.container {
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border: 5px solid blue;
+    background-color: rgba(0,0,255,0.2);
+  }
+
+  h1 {
+    color: blue;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  button {
+    padding: 15px;
+    font-weight: bold;
+    background-color: aqua;
+    border: 3px solid blue;
+    margin: 0 40px;
+  }

@@ -18,6 +18,14 @@ console.log('JS OK');
 const targetElement = document.getElementById('target');
 console.log(targetElement);
 
+const targetKm = document.getElementById('kilometer');
+console.log(targetKm);
+
+const targetAge = document.getElementById('age');
+console.log(targetAge);
+
+
+
 // Chiedere all’utente il numero km che vuole percorrere
 const journey = prompt('Dimmi quanti km vuoi percorrere', 50).trim();
 
@@ -68,13 +76,17 @@ if (isValid) {
     } else if (newAge >= overAge) {
         finalPrice = ((ticketPrice / 100) * 60);
         roundedfinalPrice = Math.round(finalPrice * 100) / 100;
-        console.log('sconto minorennni applicato, prezzo finale = ' + roundedfinalPrice);
+        console.log('sconto over65 applicato, prezzo finale = ' + roundedfinalPrice);
     } else {
         roundedfinalPrice = Math.round(finalPrice * 100) / 100;
         console.log('nessuno sconto applicato, prezzo finale = ' + roundedfinalPrice);
     }
 
     targetElement.innerText = "Il prezzo del viaggio è " + roundedfinalPrice;
+    targetKm.innerText = "Il tuo chilometraggio è " + journey;
+    targetAge.innerText = "La tua età è " + newAge;
+
+
 
 } else {
     alert('Devi inserire un parametro valido');
